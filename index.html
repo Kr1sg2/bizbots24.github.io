@@ -3,31 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BizBots24</title>
+  <title>BizBots24 | Smart Automation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #3498db;
+      color: white;
+      padding: 1rem 2rem;
       text-align: center;
-      padding: 50px;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
+    header h1 {
+      margin: 0;
     }
-    a {
-      color: #00ffc8;
+    nav {
+      background: #2c3e50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
+    section {
+      padding: 2rem;
+    }
+    .services, .testimonials {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .service, .testimonial {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 5px solid #27ae60;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    footer {
+      background: #34495e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    a.button {
+      background: #27ae60;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <h1>🤖 BizBots24</h1>
-  <p>Smart Automation. Real Results.</p>
-  <p>Contact us at <a href="mailto:info@bizbots24.com">info@bizbots24.com</a></p>
+  <header>
+    <h1>BizBots24</h1>
+    <p>Smart Automation. Real Results.</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Custom Automation Bots</h3>
+        <p>We build tailored bots to automate your repetitive tasks and increase productivity.</p>
+      </div>
+      <div class="service">
+        <h3>Smart Scheduling & Alerts</h3>
+        <p>Never miss a beat—automated reminders, calendar syncing, and notifications.</p>
+      </div>
+      <div class="service">
+        <h3>Data Entry & Integration</h3>
+        <p>From spreadsheets to CRM systems—we automate data input and clean-up.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"BizBots24 transformed the way we operate. Our monthly reporting now takes 30 minutes instead of 2 days!"</p>
+        <strong>- Lauren T., Office Manager</strong>
+      </div>
+      <div class="testimonial">
+        <p>"They built an automation system that saved us thousands in labor. Highly recommend them!"</p>
+        <strong>- James R., Small Business Owner</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:info@bizbots24.com">info@bizbots24.com</a></p>
+    <a class="button" href="mailto:info@bizbots24.com">Get a Free Consultation</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BizBots24. All rights reserved.</p>
+  </footer>
 </body>
 </html>
