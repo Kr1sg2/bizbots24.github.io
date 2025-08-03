@@ -10,6 +10,7 @@
       margin: 0;
       background-color: #eaf6ff;
       color: #222;
+      text-align: center;
     }
 
     header {
@@ -25,6 +26,7 @@
       margin: 0;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
       transition: transform 0.3s ease, text-shadow 0.3s ease;
+      font-weight: bold;
     }
 
     header h1:hover {
@@ -38,6 +40,7 @@
       margin-top: 10px;
       animation: pulse 3s infinite ease-in-out;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+      font-weight: bold;
     }
 
     @keyframes pulse {
@@ -46,7 +49,6 @@
     }
 
     .section-title {
-      text-align: center;
       font-size: 1.5em;
       color: #1976d2;
       font-weight: bold;
@@ -67,30 +69,42 @@
       max-width: 650px;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(25, 118, 210, 0.4); /* More intense blue highlight */
+      box-shadow: 0 8px 24px rgba(25, 118, 210, 0.4);
       transition: transform 0.2s ease, box-shadow 0.3s ease;
+      text-align: center;
     }
 
     .card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 32px rgba(25, 118, 210, 0.5); /* Even stronger on hover */
+      box-shadow: 0 10px 32px rgba(25, 118, 210, 0.5);
     }
 
     ul {
       padding-left: 0;
+      margin: 16px 0;
       list-style: none;
+      display: inline-block;
+      text-align: left;
     }
 
-    ul li::before {
+    li {
+      margin-bottom: 12px;
+      font-size: 1.05em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li .emoji {
       margin-right: 10px;
+      font-size: 1.2em;
+      flex-shrink: 0;
+      display: inline-block;
     }
 
-    ul li:nth-child(1)::before { content: '📄'; }
-    ul li:nth-child(2)::before { content: '🛒'; }
-    ul li:nth-child(3)::before { content: '🏠'; }
-    ul li:nth-child(4)::before { content: '📬'; }
-    ul li:nth-child(5)::before { content: '📱'; }
-    ul li:nth-child(6)::before { content: '🤯'; }
+    .bold {
+      font-weight: bold;
+    }
 
     .quote {
       font-style: italic;
@@ -129,89 +143,90 @@
       color: #555;
       margin-top: 40px;
       padding: 20px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>BizBots24</h1>
-    <p>Smarter Solutions. Less Effort.</p>
+    <p class="bold">Smarter Solutions. Less Effort.</p>
   </header>
 
-  <div class="section-title">✅ Services That Get Results</div>
+  <div class="section-title bold">✅ Services That Get Results</div>
   <div class="card">
-    <h3>📝 SEO Content & Copywriting</h3>
-    <p><strong>Fast, conversion-friendly writing with AI precision</strong></p>
+    <h3 class="bold">📝 SEO Content & Copywriting</h3>
+    <p><span class="bold">Fast, conversion-friendly writing with AI precision</span></p>
     <ul>
-      <li>SEO Blog Posts (500–1500+ words)</li>
-      <li>Product Descriptions (Amazon, Etsy, Shopify)</li>
-      <li>Website Copy (Home, About, Services, FAQ)</li>
-      <li>Email Newsletters / Drip Campaigns</li>
-      <li>Social Media Captions</li>
-      <li>AI Prompt Packs (for ChatGPT, Jasper, etc.)</li>
+      <li><span class="emoji">📝</span><span class="bold">SEO Blog Posts (500–1500+ words)</span></li>
+      <li><span class="emoji">🛒</span><span class="bold">Product Descriptions (Amazon, Etsy, Shopify)</span></li>
+      <li><span class="emoji">💻</span><span class="bold">Website Copy (Home, About, Services, FAQ)</span></li>
+      <li><span class="emoji">📧</span><span class="bold">Email Newsletters / Drip Campaigns</span></li>
+      <li><span class="emoji">📱</span><span class="bold">Social Media Captions</span></li>
+      <li><span class="emoji">🤖</span><span class="bold">AI Prompt Packs (for ChatGPT, Jasper, etc.)</span></li>
     </ul>
-    <p>⚡ Delivered fast using proven templates + AI, then edited by a human.</p>
+    <p><span class="bold">⚡ Delivered fast using proven templates + AI, then edited by a human.</span></p>
   </div>
 
   <div class="card">
-    <h3>🤖 Smart Automations</h3>
-    <p><strong>Time-saving tools you didn’t know you needed</strong></p>
+    <h3 class="bold">🤖 Smart Automations</h3>
+    <p><span class="bold">Time-saving tools you didn’t know you needed</span></p>
     <ul>
-      <li>📆 Smart Scheduling & Automated Reminders</li>
-      <li>📇 CRM Syncing & Lead Entry Bots</li>
-      <li>📊 Spreadsheet Cleanups & Import Helpers</li>
-      <li>📥 Email Parsers + Alerts</li>
-      <li>📄 AI-generated Content Templates (via Notion, Google Docs)</li>
-    </ul>
-  </div>
-
-  <div class="section-title">💬 What Clients Say</div>
-  <div class="card">
-    <div class="quote">“The product descriptions were spot on and delivered fast.”</div>
-    <div class="quote-author">– Amanda R.</div>
-  </div>
-  <div class="card">
-    <div class="quote">“Their blog writing helped my site rank in Google within weeks.”</div>
-    <div class="quote-author">– Mike T.</div>
-  </div>
-  <div class="card">
-    <div class="quote">“Set it and forget it. My calendar and emails run like clockwork now.”</div>
-    <div class="quote-author">– Jonathan P.</div>
-  </div>
-  <div class="card">
-    <div class="quote">“Quick, clean work on my website copy — and they even gave me SEO tips!”</div>
-    <div class="quote-author">– Lauren T.</div>
-  </div>
-
-  <div class="section-title">📁 Example Projects</div>
-  <div class="card">
-    <ul>
-      <li>📦 Product Descriptions: 50 items done in 2 days for an Etsy store</li>
-      <li>📰 Weekly Blog Pack: 4 blog posts/month with AI-assisted SEO</li>
-      <li>📧 Email Campaign: 3-part cold email series with high open rates</li>
-      <li>🤖 Google Calendar + CRM Bot: Lead form triggers reminder and sync</li>
+      <li><span class="emoji">📆</span><span class="bold">Smart Scheduling & Automated Reminders</span></li>
+      <li><span class="emoji">📇</span><span class="bold">CRM Syncing & Lead Entry Bots</span></li>
+      <li><span class="emoji">📊</span><span class="bold">Spreadsheet Cleanups & Import Helpers</span></li>
+      <li><span class="emoji">📥</span><span class="bold">Email Parsers + Alerts</span></li>
+      <li><span class="emoji">📄</span><span class="bold">AI-generated Content Templates (via Notion, Google Docs)</span></li>
     </ul>
   </div>
 
-  <div class="section-title">💸 Starter Pricing</div>
+  <div class="section-title bold">💬 What Clients Say</div>
   <div class="card">
-    <ul>
-      <li><strong>⚡ Quick Content:</strong> 500-word blog OR 5 product descriptions – <strong>$49</strong></li>
-      <li><strong>📚 Content Bundle:</strong> 4 blogs/month + meta + images – <strong>$179/month</strong></li>
-      <li><strong>🛠️ Automation Mini:</strong> 1 small tool (calendar sync, email alert, etc.) – <strong>$99–$199</strong></li>
-      <li><strong>🖥️ Full Website Copy:</strong> Homepage + About + Services + Contact – <strong>$299+</strong></li>
-    </ul>
-    <a href="#" class="cta-button">Get a Free Consultation</a>
+    <div class="quote"><span class="bold">“The product descriptions were spot on and delivered fast.”</span></div>
+    <div class="quote-author">– <span class="bold">Amanda R.</span></div>
+  </div>
+  <div class="card">
+    <div class="quote"><span class="bold">“Their blog writing helped my site rank in Google within weeks.”</span></div>
+    <div class="quote-author">– <span class="bold">Mike T.</span></div>
+  </div>
+  <div class="card">
+    <div class="quote"><span class="bold">“Set it and forget it. My calendar and emails run like clockwork now.”</span></div>
+    <div class="quote-author">– <span class="bold">Jonathan P.</span></div>
+  </div>
+  <div class="card">
+    <div class="quote"><span class="bold">“Quick, clean work on my website copy — and they even gave me SEO tips!”</span></div>
+    <div class="quote-author">– <span class="bold">Lauren T.</span></div>
   </div>
 
-  <div class="section-title">📞 Contact</div>
+  <div class="section-title bold">📁 Example Projects</div>
   <div class="card">
-    <p>Email: <a href="mailto:info@bizbots24.com">info@bizbots24.com</a></p>
-    <p>Based in Florida, USA – Serving Clients Worldwide</p>
+    <ul>
+      <li><span class="emoji">📦</span><span class="bold">Product Descriptions: 50 items done in 2 days for an Etsy store</span></li>
+      <li><span class="emoji">📰</span><span class="bold">Weekly Blog Pack: 4 blog posts/month with AI-assisted SEO</span></li>
+      <li><span class="emoji">📧</span><span class="bold">Email Campaign: 3-part cold email series with high open rates</span></li>
+      <li><span class="emoji">🤖</span><span class="bold">Google Calendar + CRM Bot: Lead form triggers reminder and sync</span></li>
+    </ul>
+  </div>
+
+  <div class="section-title bold">💸 Starter Pricing</div>
+  <div class="card">
+    <ul>
+      <li><span class="emoji">⚡</span><span class="bold">Quick Content:</span> <span class="bold">500-word blog OR 5 product descriptions – $49</span></li>
+      <li><span class="emoji">📚</span><span class="bold">Content Bundle:</span> <span class="bold">4 blogs/month + meta + images – $179/month</span></li>
+      <li><span class="emoji">🛠️</span><span class="bold">Automation Mini:</span> <span class="bold">1 small tool (calendar sync, email alert, etc.) – $99–$199</span></li>
+      <li><span class="emoji">🖥️</span><span class="bold">Full Website Copy:</span> <span class="bold">Homepage + About + Services + Contact – $299+</span></li>
+    </ul>
+    <a href="#" class="cta-button bold">Get a Free Consultation</a>
+  </div>
+
+  <div class="section-title bold">📞 Contact</div>
+  <div class="card">
+    <p><span class="bold">Email:</span> <a href="mailto:info@bizbots24.com"><span class="bold">info@bizbots24.com</span></a></p>
+    <p><span class="bold">Based in Florida, USA – Serving Clients Worldwide</span></p>
   </div>
 
   <footer>
-    © 2025 BizBots24. All rights reserved.
+    <span class="bold">© 2025 BizBots24. All rights reserved.</span>
   </footer>
 </body>
 </html>
