@@ -2,139 +2,216 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BizBots24 – Smarter Solutions, Less Effort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizBots24</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f9fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #eaf6ff;
       color: #222;
     }
+
     header {
-      background-color: #2a9df4;
+      background: linear-gradient(90deg, #2196f3, #1976d2);
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 40px 20px 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
     }
-    h2 {
-      border-bottom: 2px solid #2a9df4;
-      padding-bottom: 5px;
+
+    header h1:hover {
+      transform: scale(1.05);
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
     }
+
+    header p {
+      font-size: 1.3em;
+      color: white;
+      margin-top: 10px;
+      animation: pulse 3s infinite ease-in-out;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.03); opacity: 0.95; }
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.5em;
+      color: #1976d2;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      margin-top: 40px;
+      margin-bottom: 10px;
+      transition: transform 0.2s ease, text-shadow 0.2s ease;
+    }
+
+    .section-title:hover {
+      transform: scale(1.02);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
     .card {
       background: white;
-      border: 1px solid #ddd;
+      margin: 20px auto;
+      max-width: 650px;
       padding: 20px;
-      margin: 20px 0;
-      border-left: 5px solid #2a9df4;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(25, 118, 210, 0.4); /* More intense blue highlight */
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
-    .cta {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #32c24d;
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 32px rgba(25, 118, 210, 0.5); /* Even stronger on hover */
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    ul li::before {
+      margin-right: 10px;
+    }
+
+    ul li:nth-child(1)::before { content: '📄'; }
+    ul li:nth-child(2)::before { content: '🛒'; }
+    ul li:nth-child(3)::before { content: '🏠'; }
+    ul li:nth-child(4)::before { content: '📬'; }
+    ul li:nth-child(5)::before { content: '📱'; }
+    ul li:nth-child(6)::before { content: '🤯'; }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+    }
+
+    .quote-author {
+      text-align: center;
+      margin-top: 5px;
+      font-weight: bold;
+      color: #1976d2;
+    }
+
+    .cta-button {
+      display: block;
+      width: fit-content;
+      margin: 25px auto 10px;
+      background-color: #00c853;
       color: white;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
+      box-shadow: 0 4px 12px rgba(0, 200, 83, 0.3);
+      transition: background-color 0.3s, transform 0.2s ease;
     }
+
+    .cta-button:hover {
+      background-color: #00b140;
+      transform: scale(1.05);
+    }
+
     footer {
       text-align: center;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 40px;
       padding: 20px;
-      background: #333;
-      color: white;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>BizBots24</h1>
     <p>Smarter Solutions. Less Effort.</p>
   </header>
 
-  <section>
-    <h2>✅ Services That Get Results</h2>
-
-    <div class="card">
-      <h3>✍️ SEO Content & Copywriting</h3>
-      <p><strong>Fast, conversion-friendly writing with AI precision</strong></p>
-      <ul>
-        <li>SEO Blog Posts (500–1500+ words)</li>
-        <li>Product Descriptions (Amazon, Etsy, Shopify)</li>
-        <li>Website Copy (Home, About, Services, FAQ)</li>
-        <li>Email Newsletters / Drip Campaigns</li>
-        <li>Social Media Captions</li>
-        <li>AI Prompt Packs (for ChatGPT, Jasper, etc.)</li>
-      </ul>
-      <p>⚡ Delivered fast using proven templates + AI, then edited by a human.</p>
-    </div>
-
-    <div class="card">
-      <h3>🤖 Smart Automations</h3>
-      <p><strong>Time-saving tools you didn’t know you needed</strong></p>
-      <ul>
-        <li>Smart Scheduling & Automated Reminders</li>
-        <li>CRM Syncing & Lead Entry Bots</li>
-        <li>Spreadsheet Cleanups & Import Helpers</li>
-        <li>Email Parsing + Alerts</li>
-        <li>AI-generated Content Templates (via Notion, Google Docs)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>💬 What Clients Say</h2>
-    <div class="card">
-      <p>"The product descriptions were spot-on and delivered fast."<br><strong>– Amanda R.</strong></p>
-    </div>
-    <div class="card">
-      <p>"Their blog writing helped my site rank in Google within weeks."<br><strong>– Mike T.</strong></p>
-    </div>
-    <div class="card">
-      <p>"Set it and forget it. My calendar and emails run like clockwork now."<br><strong>– Jonathan P.</strong></p>
-    </div>
-    <div class="card">
-      <p>"Quick, clean work on my website copy — and they even gave me SEO tips!"<br><strong>– Lauren T.</strong></p>
-    </div>
-  </section>
-
-  <section>
-    <h2>🛠️ Example Projects</h2>
+  <div class="section-title">✅ Services That Get Results</div>
+  <div class="card">
+    <h3>📝 SEO Content & Copywriting</h3>
+    <p><strong>Fast, conversion-friendly writing with AI precision</strong></p>
     <ul>
-      <li>📄 Product Descriptions: 50 items done in 2 days for an Etsy store</li>
+      <li>SEO Blog Posts (500–1500+ words)</li>
+      <li>Product Descriptions (Amazon, Etsy, Shopify)</li>
+      <li>Website Copy (Home, About, Services, FAQ)</li>
+      <li>Email Newsletters / Drip Campaigns</li>
+      <li>Social Media Captions</li>
+      <li>AI Prompt Packs (for ChatGPT, Jasper, etc.)</li>
+    </ul>
+    <p>⚡ Delivered fast using proven templates + AI, then edited by a human.</p>
+  </div>
+
+  <div class="card">
+    <h3>🤖 Smart Automations</h3>
+    <p><strong>Time-saving tools you didn’t know you needed</strong></p>
+    <ul>
+      <li>📆 Smart Scheduling & Automated Reminders</li>
+      <li>📇 CRM Syncing & Lead Entry Bots</li>
+      <li>📊 Spreadsheet Cleanups & Import Helpers</li>
+      <li>📥 Email Parsers + Alerts</li>
+      <li>📄 AI-generated Content Templates (via Notion, Google Docs)</li>
+    </ul>
+  </div>
+
+  <div class="section-title">💬 What Clients Say</div>
+  <div class="card">
+    <div class="quote">“The product descriptions were spot on and delivered fast.”</div>
+    <div class="quote-author">– Amanda R.</div>
+  </div>
+  <div class="card">
+    <div class="quote">“Their blog writing helped my site rank in Google within weeks.”</div>
+    <div class="quote-author">– Mike T.</div>
+  </div>
+  <div class="card">
+    <div class="quote">“Set it and forget it. My calendar and emails run like clockwork now.”</div>
+    <div class="quote-author">– Jonathan P.</div>
+  </div>
+  <div class="card">
+    <div class="quote">“Quick, clean work on my website copy — and they even gave me SEO tips!”</div>
+    <div class="quote-author">– Lauren T.</div>
+  </div>
+
+  <div class="section-title">📁 Example Projects</div>
+  <div class="card">
+    <ul>
+      <li>📦 Product Descriptions: 50 items done in 2 days for an Etsy store</li>
       <li>📰 Weekly Blog Pack: 4 blog posts/month with AI-assisted SEO</li>
-      <li>📩 Email Campaign: 3-part cold email series with high open rates</li>
-      <li>📆 Google Calendar + CRM Bot: Lead form triggers reminder and sync</li>
+      <li>📧 Email Campaign: 3-part cold email series with high open rates</li>
+      <li>🤖 Google Calendar + CRM Bot: Lead form triggers reminder and sync</li>
     </ul>
-  </section>
+  </div>
 
-  <section>
-    <h2>💰 Starter Pricing</h2>
+  <div class="section-title">💸 Starter Pricing</div>
+  <div class="card">
     <ul>
-      <li><strong>Quick Content</strong>: 500-word blog OR 5 product descriptions – <strong>$49</strong></li>
-      <li><strong>Content Bundle</strong>: 4 blogs/month + meta + images – <strong>$179/month</strong></li>
-      <li><strong>Automation Mini</strong>: 1 small bot (calendar sync, email alert, etc.) – <strong>$99–$199</strong></li>
-      <li><strong>Full Website Copy</strong>: Homepage + About + Services + Contact – <strong>$299+</strong></li>
+      <li><strong>⚡ Quick Content:</strong> 500-word blog OR 5 product descriptions – <strong>$49</strong></li>
+      <li><strong>📚 Content Bundle:</strong> 4 blogs/month + meta + images – <strong>$179/month</strong></li>
+      <li><strong>🛠️ Automation Mini:</strong> 1 small tool (calendar sync, email alert, etc.) – <strong>$99–$199</strong></li>
+      <li><strong>🖥️ Full Website Copy:</strong> Homepage + About + Services + Contact – <strong>$299+</strong></li>
     </ul>
-    <a class="cta" href="mailto:info@bizbots24.com">Get a Free Consultation</a>
-  </section>
+    <a href="#" class="cta-button">Get a Free Consultation</a>
+  </div>
 
-  <section>
-    <h2>📞 Contact</h2>
+  <div class="section-title">📞 Contact</div>
+  <div class="card">
     <p>Email: <a href="mailto:info@bizbots24.com">info@bizbots24.com</a></p>
     <p>Based in Florida, USA – Serving Clients Worldwide</p>
-  </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 BizBots24. All rights reserved.</p>
+    © 2025 BizBots24. All rights reserved.
   </footer>
-
 </body>
 </html>
