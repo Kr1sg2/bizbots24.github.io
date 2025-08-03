@@ -58,268 +58,8 @@
       transition: transform 0.2s ease, text-shadow 0.2s ease;
     }
 
-    .section-title:hover {
-      transform: scale(1.02);
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    }
-
-    .card {
-      background: white;
-      margin: 20px auto;
-      max-width: 650px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(25, 118, 210, 0.4);
-      transition: transform 0.2s, box-shadow 0.3s;
-      text-align: center;
-    }
-
-    .card:hover,
-    .card:active,
-    .card.active {
-      transform: translateY(-6px) scale(1.03);
-      box-shadow: 0 12px 32px rgba(25, 118, 210, 0.5);
-    }
-
-    ul {
-      padding-left: 0;
-      margin: 16px 0;
-      list-style: none;
-      display: inline-block;
-      text-align: left;
-    }
-
-    li {
-      margin-bottom: 12px;
-      font-size: 1.05em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .section-title.bold, h3.bold {
       font-weight: bold;
-    }
-
-    li .emoji {
-      margin-right: 10px;
-      font-size: 1.2em;
-      flex-shrink: 0;
-      display: inline-block;
-    }
-
-    .bold {
-      font-weight: bold;
-    }
-
-    .quote {
-      font-style: italic;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .quote-author {
-      text-align: center;
-      margin-top: 5px;
-      font-weight: bold;
-      color: #1976d2;
-    }
-
-    .cta-button {
-      display: block;
-      width: fit-content;
-      margin: 25px auto 10px;
-      background-color: #00c853;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0, 200, 83, 0.3);
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    .cta-button:hover,
-    .cta-button:active {
-      background-color: #00b140;
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 40px;
-      padding: 20px;
-      font-weight: bold;
-    }
-
-    @media (max-width: 700px) {
-      .card {
-        max-width: 95vw;
-        padding: 12px;
-      }
-      header h1 {
-        font-size: 2.1em;
-      }
-      .section-title {
-        font-size: 1.1em;
-      }
-      .cta-button {
-        padding: 10px 12px;
-        font-size: 1em;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>BizBots24</h1>
-    <p class="bold">Smarter Solutions. Less Effort.</p>
-  </header>
-
-  <div class="section-title bold">✅ Services That Get Results</div>
-  <div class="card">
-    <h3 class="bold">📝 SEO Content & Copywriting</h3>
-    <p><span class="bold">Fast, conversion-friendly writing with AI precision</span></p>
-    <ul>
-      <li><span class="emoji">📝</span>SEO Blog Posts (500–1500+ words)</li>
-      <li><span class="emoji">🛒</span>Product Descriptions (Amazon, Etsy, Shopify)</li>
-      <li><span class="emoji">💻</span>Website Copy (Home, About, Services, FAQ)</li>
-      <li><span class="emoji">📧</span>Email Newsletters / Drip Campaigns</li>
-      <li><span class="emoji">📱</span>Social Media Captions</li>
-      <li><span class="emoji">🤖</span>AI Prompt Packs (for ChatGPT, Jasper, etc.)</li>
-    </ul>
-    <p><span class="bold">⚡ Delivered fast using proven templates + AI, then edited by a human.</span></p>
-  </div>
-
-  <div class="card">
-    <h3 class="bold">🤖 Smart Automations</h3>
-    <p><span class="bold">Time-saving tools you didn’t know you needed</span></p>
-    <ul>
-      <li><span class="emoji">📆</span>Smart Scheduling & Automated Reminders</li>
-      <li><span class="emoji">📇</span>CRM Syncing & Lead Entry Bots</li>
-      <li><span class="emoji">📊</span>Spreadsheet Cleanups & Import Helpers</li>
-      <li><span class="emoji">📥</span>Email Parsers + Alerts</li>
-      <li><span class="emoji">📄</span>AI-generated Content Templates (via Notion, Google Docs)</li>
-    </ul>
-  </div>
-
-  <div class="section-title bold">💬 What Clients Say</div>
-  <div class="card">
-    <div class="quote">“The product descriptions were spot on and delivered fast.”</div>
-    <div class="quote-author">– Amanda R.</div>
-  </div>
-  <div class="card">
-    <div class="quote">“Their blog writing helped my site rank in Google within weeks.”</div>
-    <div class="quote-author">– Mike T.</div>
-  </div>
-  <div class="card">
-    <div class="quote">“Set it and forget it. My calendar and emails run like clockwork now.”</div>
-    <div class="quote-author">– Jonathan P.</div>
-  </div>
-  <div class="card">
-    <div class="quote">“Quick, clean work on my website copy — and they even gave me SEO tips!”</div>
-    <div class="quote-author">– Lauren T.</div>
-  </div>
-
-  <div class="section-title bold">📁 Example Projects</div>
-  <div class="card">
-    <ul>
-      <li><span class="emoji">📦</span>Product Descriptions: 50 items done in 2 days for an Etsy store</li>
-      <li><span class="emoji">📰</span>Weekly Blog Pack: 4 blog posts/month with AI-assisted SEO</li>
-      <li><span class="emoji">📧</span>Email Campaign: 3-part cold email series with high open rates</li>
-      <li><span class="emoji">🤖</span>Google Calendar + CRM Bot: Lead form triggers reminder and sync</li>
-    </ul>
-  </div>
-
-  <div class="section-title bold">💸 Starter Pricing</div>
-  <div class="card">
-    <ul>
-      <li><span class="emoji">⚡</span>Quick Content: 500-word blog OR 5 product descriptions – $49</li>
-      <li><span class="emoji">📚</span>Content Bundle: 4 blogs/month + meta + images – $179/month</li>
-      <li><span class="emoji">🛠️</span>Automation Mini: 1 small tool (calendar sync, email alert, etc.) – $99–$199</li>
-      <li><span class="emoji">🖥️</span>Full Website Copy: Homepage + About + Services + Contact – $299+</li>
-    </ul>
-    <a href="mailto:info@bizbots24.com" class="cta-button bold">Get a Free Consultation</a>
-  </div>
-
-  <div class="section-title bold">📞 Contact</div>
-  <div class="card">
-    <p>Email: <a href="mailto:info@bizbots24.com"><span class="bold">info@bizbots24.com</span></a></p>
-    <p>Based in Florida, USA – Serving Clients Worldwide</p>
-  </div>
-
-  <footer>
-    <span class="bold">© 2025 BizBots24. All rights reserved.</span>
-  </footer>
-  <script>
-    // Touch feedback for cards (optional, for better mobile interactivity)
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('touchstart', function() {
-        card.classList.add('active');
-      });
-      card.addEventListener('touchend', function() {
-        card.classList.remove('active');
-      });
-    });
-  </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BizBots24</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #eaf6ff;
-      color: #222;
-      text-align: center;
-    }
-
-    header {
-      background: linear-gradient(90deg, #2196f3, #1976d2);
-      color: white;
-      text-align: center;
-      padding: 40px 20px 30px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    header h1 {
-      font-size: 3.5em;
-      margin: 0;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease, text-shadow 0.3s ease;
-      font-weight: bold;
-    }
-
-    header h1:hover {
-      transform: scale(1.05);
-      text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
-    }
-
-    header p {
-      font-size: 1.3em;
-      color: white;
-      margin-top: 10px;
-      animation: pulse 3s infinite ease-in-out;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
-      font-weight: bold;
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.03); opacity: 0.95; }
-    }
-
-    .section-title {
-      font-size: 1.5em;
-      color: #1976d2;
-      font-weight: bold;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-      margin-top: 40px;
-      margin-bottom: 10px;
-      transition: transform 0.2s ease, text-shadow 0.2s ease;
     }
 
     .section-title:hover {
@@ -468,24 +208,29 @@
 
   <div class="section-title bold">💬 What Clients Say</div>
   <div class="card">
+    <h3 class="bold">Testimonial</h3>
     <div class="quote">“The product descriptions were spot on and delivered fast.”</div>
     <div class="quote-author">– Amanda R.</div>
   </div>
   <div class="card">
+    <h3 class="bold">Testimonial</h3>
     <div class="quote">“Their blog writing helped my site rank in Google within weeks.”</div>
     <div class="quote-author">– Mike T.</div>
   </div>
   <div class="card">
+    <h3 class="bold">Testimonial</h3>
     <div class="quote">“Set it and forget it. My calendar and emails run like clockwork now.”</div>
     <div class="quote-author">– Jonathan P.</div>
   </div>
   <div class="card">
+    <h3 class="bold">Testimonial</h3>
     <div class="quote">“Quick, clean work on my website copy — and they even gave me SEO tips!”</div>
     <div class="quote-author">– Lauren T.</div>
   </div>
 
   <div class="section-title bold">📁 Example Projects</div>
   <div class="card">
+    <h3 class="bold">Example Projects</h3>
     <ul>
       <li><span class="emoji">📦</span>Product Descriptions: 50 items done in 2 days for an Etsy store</li>
       <li><span class="emoji">📰</span>Weekly Blog Pack: 4 blog posts/month with AI-assisted SEO</li>
@@ -496,6 +241,7 @@
 
   <div class="section-title bold">💸 Starter Pricing</div>
   <div class="card">
+    <h3 class="bold">Starter Pricing</h3>
     <ul>
       <li><span class="emoji">⚡</span>Quick Content: 500-word blog OR 5 product descriptions – $49</li>
       <li><span class="emoji">📚</span>Content Bundle: 4 blogs/month + meta + images – $179/month</li>
@@ -507,6 +253,7 @@
 
   <div class="section-title bold">📞 Contact</div>
   <div class="card">
+    <h3 class="bold">Contact</h3>
     <p>Email: <a href="mailto:info@bizbots24.com"><span class="bold">info@bizbots24.com</span></a></p>
     <p>Based in Florida, USA – Serving Clients Worldwide</p>
   </div>
